@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MBViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="39g-4J-z0q"/>
+                        <viewControllerLayoutGuide type="bottom" id="MIN-Si-ohy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CB00001" translatesAutoresizingMaskIntoConstraints="NO" id="lhS-q1-YGg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="268" translatesAutoresizingMaskIntoConstraints="NO" id="FXz-Bp-MjU" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="26" y="157" width="268" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="3RR-nO-7Ur"/>
+                                    <constraint firstAttribute="height" constant="122" id="Lbc-RJ-EGv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="1" green="0.162586435" blue="0.1810087755" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.162586435" blue="0.1810087755" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.9911919857" blue="0.98924618870000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="0.99119198570532518" blue="0.98924618869551617" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lhS-q1-YGg" secondAttribute="bottom" id="5Hb-5Y-ZA7"/>
+                            <constraint firstAttribute="trailing" secondItem="lhS-q1-YGg" secondAttribute="trailing" id="FO1-Cv-Svx"/>
+                            <constraint firstItem="FXz-Bp-MjU" firstAttribute="centerX" secondItem="lhS-q1-YGg" secondAttribute="centerX" id="OfC-W7-n3C"/>
+                            <constraint firstItem="FXz-Bp-MjU" firstAttribute="centerY" secondItem="lhS-q1-YGg" secondAttribute="centerY" constant="-22" id="YAB-e0-Dm0"/>
+                            <constraint firstItem="lhS-q1-YGg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ZDo-JE-uHN"/>
+                            <constraint firstItem="lhS-q1-YGg" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="c6g-vw-QDK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="lhS-q1-YGg" id="Mdm-Y0-Zga"/>
+                        <outlet property="predictionLabel" destination="FXz-Bp-MjU" id="Erz-oZ-hNf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CB00001" width="320" height="568"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
